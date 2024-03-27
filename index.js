@@ -1,3 +1,4 @@
+import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     { message: "Enter first number", type: "number", name: "FirstNumber" },
     { message: "Enter Second number", type: "number", name: "secondNumber" },
@@ -24,4 +25,3 @@ else if (answer.operator === "Divion") {
 else {
     console.log("please select valid oprator");
 }
-export {};
